@@ -1,0 +1,82 @@
+{
+    id: "node01",
+    name: "Course",
+    data: {},
+    children: [{
+            id: "node02",
+            name: "Week 1",
+            children: [{
+                id: "node03",
+                name: "Concept 1",
+                children: [{
+                    id: "node04",
+                    name: "subconcept"
+                }, {
+                    id: "node05",
+                    name: "subconcept"
+                },
+            {
+                id:"node07",
+                name: "Week 2"
+            }]
+            }, {
+                id: "node06",
+                name: "Concept 2",
+                children: [{
+                    id: "node13",
+                    name: "subconcept"
+                },{
+                    id: "node14",
+                    name: "subconcept"
+                },{
+                    id: "node15",
+                    name: "subconcept"
+                }]
+            }]
+        }, {
+            id: "node07",
+            name: "Week 2",
+            children: [{
+                id: "node08",
+                name: "Concept 3",
+                children: [{
+                    id: "node16",
+                    name: "subconcept"
+                }]
+            },{
+                id: "node09",
+                name: "Concept 4",
+                children: [{
+                    id: "node17",
+                    name: "subconcept"
+                },{
+                    id: "node18",
+                    name: "subconcept"
+                }]
+            },{
+                id: "node10",
+                name: "Concept 5",
+                children: [{
+                    id: "node19",
+                    name: "subconcept"
+                }]
+            },]
+        }, {
+            id: "node11",
+            name: "Week 3",
+            children: [{
+                id: "node12",
+                name: "Concept 6",
+                children: [{
+                    id: "node20",
+                    name: "subconcept"
+                },{
+                    id: "node21",
+                    name: "subconcept"
+                },{
+                    id: "node22",
+                    name: "subconcept"
+                }]
+            }]
+        }
+]}
