@@ -44,7 +44,11 @@ function init(){
                     }, {
                         id: "node05",
                         name: "subconcept"
-                    }]
+                    },
+                {
+                    id:"node07",
+                    name: "Week 2"
+                }]
                 }, {
                     id: "node06",
                     name: "Concept 2",
@@ -106,6 +110,11 @@ function init(){
                 }]
             }
     ]};
+    // var json = { 
+    //     id: "root", 
+    //     name: "Course",
+    //     children: [{"name": "\"Week 1\"", "id": "wk1"}, {"name": "\"Week 2\"", "id": "wk2"}, {"name": "\"Week 3\"", "id": "wk3"}, {"name": "\"Week 4\"", "id": "wk4"}, {"name": "\"Week 5\"", "id": "wk5"}, {"name": "\"Week 6\"", "id": "wk6"}, {"name": "\"Week 7\"", "id": "wk7"}, {"name": "\"Week 8\"", "id": "wk8"}, {"name": "\"Week 9\"", "id": "wk9"}, {"name": "\"Week 10\"", "id": "wk10"}, {"name": "\"Quest\"", "id": "quest"}, {"name": "\"Midterm\"", "id": "midterm"}, {"name": "\"<concept>\"", "id": "ex1"}, {"name": "\"Number Systems\"", "id": "numSystems"}, {"name": "\"<concept>\"", "id": "ex2"}, {"name": "\"HOFs\"", "id": "hofs"}, {"name": "\"<concept>\"", "id": "ex3"}, {"name": "\"<concept>\"", "id": "ex4"}, {"name": "\"Programming Paradigms\"", "id": "paradigms"}, {"name": "\"<concept>\"", "id": "ex5"}, {"name": "\"Python Lists\"", "id": "pyLists"}, {"name": "\"<concept>\"", "id": "ex6"}, {"name": "\"Binary\"", "id": "binary"}, {"name": "\"Decimal\"", "id": "decimal"}, {"name": "\"Hex\"", "id": "hex"}, {"name": "\"Conversions\"", "id": "conversions"}, {"name": "\"Keep\"", "id": "keep"}, {"name": "\"Combine\"", "id": "combine"}, {"name": "\"Map\"", "id": "map"}, {"name": "\"Declarative\"", "id": "declarative"}, {"name": "\"Imperative\"", "id": "imperative"}, {"name": "\"Functional\"", "id": "functional"}, {"name": "\"Object-Oriented\"", "id": "objOriented"}, {"name": "\"List Comprehension\"", "id": "listComprehension"}, {"name": "\"Slicing\"", "id": "slicing"}, {"name": "\"Composition\"", "id": "composition"}, {"name": "\"Iteration\"", "id": "iteration"}, {"name": "\"Iterables\"", "id": "iterables"}, {"name": "\"Mutation\"", "id": "mutation"}, {"id": ","}]
+    // }
     //end
     //init Spacetree
     //Create a new ST instance
