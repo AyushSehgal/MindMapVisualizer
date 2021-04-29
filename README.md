@@ -13,4 +13,4 @@ To use the dot-to-JSON-string parser:
 
 - set filename at the bottom of parser.py to the appropriate dot filename 
 - in terminal, type $python3 parser.py
-- <output>.txt will be generated in your cwd and contains the JSON string representation
+- output.txt will be generated in your cwd and contains the JSON string representation
