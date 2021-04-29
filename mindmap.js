@@ -28,93 +28,198 @@ var Log = {
 
 function init(){
     //init data
-    var json = {
-        id: "node01",
-        name: "Course",
-        data: {},
-        children: [{
-                id: "node02",
-                name: "Week 1",
-                children: [{
-                    id: "node03",
-                    name: "Concept 1",
-                    children: [{
-                        id: "node04",
-                        name: "subconcept"
-                    }, {
-                        id: "node05",
-                        name: "subconcept"
-                    },
-                {
-                    id:"node07",
-                    name: "Week 2"
-                }]
-                }, {
-                    id: "node06",
-                    name: "Concept 2",
-                    children: [{
-                        id: "node13",
-                        name: "subconcept"
-                    },{
-                        id: "node14",
-                        name: "subconcept"
-                    },{
-                        id: "node15",
-                        name: "subconcept"
-                    }]
-                }]
-            }, {
-                id: "node07",
-                name: "Week 2",
-                children: [{
-                    id: "node08",
-                    name: "Concept 3",
-                    children: [{
-                        id: "node16",
-                        name: "subconcept"
-                    }]
-                },{
-                    id: "node09",
-                    name: "Concept 4",
-                    children: [{
-                        id: "node17",
-                        name: "subconcept"
-                    },{
-                        id: "node18",
-                        name: "subconcept"
-                    }]
-                },{
-                    id: "node10",
-                    name: "Concept 5",
-                    children: [{
-                        id: "node19",
-                        name: "subconcept"
-                    }]
-                },]
-            }, {
-                id: "node11",
-                name: "Week 3",
-                children: [{
-                    id: "node12",
-                    name: "Concept 6",
-                    children: [{
-                        id: "node20",
-                        name: "subconcept"
-                    },{
-                        id: "node21",
-                        name: "subconcept"
-                    },{
-                        id: "node22",
-                        name: "subconcept"
-                    }]
-                }]
-            }
-    ]};
-    // var json = { 
-    //     id: "root", 
+    // var json = {
+    //     id: "node01",
     //     name: "Course",
-    //     children: [{"name": "\"Week 1\"", "id": "wk1"}, {"name": "\"Week 2\"", "id": "wk2"}, {"name": "\"Week 3\"", "id": "wk3"}, {"name": "\"Week 4\"", "id": "wk4"}, {"name": "\"Week 5\"", "id": "wk5"}, {"name": "\"Week 6\"", "id": "wk6"}, {"name": "\"Week 7\"", "id": "wk7"}, {"name": "\"Week 8\"", "id": "wk8"}, {"name": "\"Week 9\"", "id": "wk9"}, {"name": "\"Week 10\"", "id": "wk10"}, {"name": "\"Quest\"", "id": "quest"}, {"name": "\"Midterm\"", "id": "midterm"}, {"name": "\"<concept>\"", "id": "ex1"}, {"name": "\"Number Systems\"", "id": "numSystems"}, {"name": "\"<concept>\"", "id": "ex2"}, {"name": "\"HOFs\"", "id": "hofs"}, {"name": "\"<concept>\"", "id": "ex3"}, {"name": "\"<concept>\"", "id": "ex4"}, {"name": "\"Programming Paradigms\"", "id": "paradigms"}, {"name": "\"<concept>\"", "id": "ex5"}, {"name": "\"Python Lists\"", "id": "pyLists"}, {"name": "\"<concept>\"", "id": "ex6"}, {"name": "\"Binary\"", "id": "binary"}, {"name": "\"Decimal\"", "id": "decimal"}, {"name": "\"Hex\"", "id": "hex"}, {"name": "\"Conversions\"", "id": "conversions"}, {"name": "\"Keep\"", "id": "keep"}, {"name": "\"Combine\"", "id": "combine"}, {"name": "\"Map\"", "id": "map"}, {"name": "\"Declarative\"", "id": "declarative"}, {"name": "\"Imperative\"", "id": "imperative"}, {"name": "\"Functional\"", "id": "functional"}, {"name": "\"Object-Oriented\"", "id": "objOriented"}, {"name": "\"List Comprehension\"", "id": "listComprehension"}, {"name": "\"Slicing\"", "id": "slicing"}, {"name": "\"Composition\"", "id": "composition"}, {"name": "\"Iteration\"", "id": "iteration"}, {"name": "\"Iterables\"", "id": "iterables"}, {"name": "\"Mutation\"", "id": "mutation"}, {"id": ","}]
-    // }
+    //     data: {},
+    //     children: [{
+    //             id: "node02",
+    //             name: "Week 1",
+    //             children: [{
+    //                 id: "node03",
+    //                 name: "Concept 1",
+    //                 children: [{
+    //                     id: "node04",
+    //                     name: "subconcept"
+    //                 }, {
+    //                     id: "node05",
+    //                     name: "subconcept"
+    //                 },
+    //             {
+    //                 id:"node07",
+    //                 name: "Week 2"
+    //             }]
+    //             }, {
+    //                 id: "node06",
+    //                 name: "Concept 2",
+    //                 children: [{
+    //                     id: "node13",
+    //                     name: "subconcept"
+    //                 },{
+    //                     id: "node14",
+    //                     name: "subconcept"
+    //                 },{
+    //                     id: "node15",
+    //                     name: "subconcept"
+    //                 }]
+    //             }]
+    //         }, {
+    //             id: "node07",
+    //             name: "Week 2",
+    //             children: [{
+    //                 id: "node08",
+    //                 name: "Concept 3",
+    //                 children: [{
+    //                     id: "node16",
+    //                     name: "subconcept"
+    //                 }]
+    //             },{
+    //                 id: "node09",
+    //                 name: "Concept 4",
+    //                 children: [{
+    //                     id: "node17",
+    //                     name: "subconcept"
+    //                 },{
+    //                     id: "node18",
+    //                     name: "subconcept"
+    //                 }]
+    //             },{
+    //                 id: "node10",
+    //                 name: "Concept 5",
+    //                 children: [{
+    //                     id: "node19",
+    //                     name: "subconcept"
+    //                 }]
+    //             },]
+    //         }, {
+    //             id: "node11",
+    //             name: "Week 3",
+    //             children: [{
+    //                 id: "node12",
+    //                 name: "Concept 6",
+    //                 children: [{
+    //                     id: "node20",
+    //                     name: "subconcept"
+    //                 },{
+    //                     id: "node21",
+    //                     name: "subconcept"
+    //                 },{
+    //                     id: "node22",
+    //                     name: "subconcept"
+    //                 }]
+    //             }]
+    //         }
+    // ]};
+    var json = {
+        id:'node00', 
+        name:'CS10', 
+        data:{}, 
+        children:[
+            {
+                id:'node0', 
+                name:'week1', 
+                children:[
+                    {
+                        id:'node3', 
+                        name:'concept1', 
+                        children:[
+                            {
+                                id:'node5', 
+                                name:'subconcept1', 
+                                children:[]},
+                            {
+                                id:'node6', 
+                                name:'subconcept2', 
+                                children:[]}
+                            ]
+                    },
+                    {
+                        id:'node4', 
+                        name:'concept2', 
+                        children:[
+                            {
+                                id:'node7', 
+                                name:'subconcept3', 
+                                children:[]},
+                            {
+                                id:'node8', 
+                                name:'subconcept4', 
+                                children:[]},
+                            {
+                                id:'node9', 
+                                name:'subconcept5', 
+                                children:[]}
+                            ]
+                    }
+                    ]
+            },
+            {
+                id:'node1', 
+                name:'week2', 
+                children:[
+                    {
+                        id:'node10', 
+                        name:'concept3', 
+                        children:[
+                            {
+                                id:'node13', 
+                                name:'subconcept6', 
+                                children:[]
+                            }
+                        ]
+                    },
+                    {
+                        id:'node11', 
+                        name:'concept4', 
+                        children:[
+                            {
+                                id:'node14', 
+                                name:'subconcept7', 
+                                children:[]
+                            },
+                            {
+                                id:'node15', 
+                                name:'subconcept8', 
+                                children:[]}
+                            ]
+                        },
+                        {
+                            id:'node12', 
+                            name:'concept5', 
+                            children:[
+                                {
+                                    id:'node16', 
+                                    name:'subconcept9', 
+                                    children:[]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id:'node2', 
+                    name:'week3', 
+                    children:[
+                        {
+                            id:'node17', 
+                            name:'concept6', 
+                            children:[
+                                {
+                                    id:'node18', 
+                                    name:'subconcept10', 
+                                    children:[]},
+                                    {
+                                        id:'node19', 
+                                        name:'subconcept11', 
+                                        children:[]
+                                    }
+                                ]
+                            }
+                        ]
+                },
+                
+            ]
+        };
     //end
     //init Spacetree
     //Create a new ST instance
