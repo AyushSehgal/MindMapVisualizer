@@ -110,116 +110,119 @@ function init(){
     //             }]
     //         }
     // ]};
-    var json = {
-        id:'node00', 
-        name:'CS10', 
-        data:{}, 
-        children:[
-            {
-                id:'node0', 
-                name:'week1', 
-                children:[
-                    {
-                        id:'node3', 
-                        name:'concept1', 
-                        children:[
-                            {
-                                id:'node5', 
-                                name:'subconcept1', 
-                                children:[]},
-                            {
-                                id:'node6', 
-                                name:'subconcept2', 
-                                children:[]}
-                            ]
-                    },
-                    {
-                        id:'node4', 
-                        name:'concept2', 
-                        children:[
-                            {
-                                id:'node7', 
-                                name:'subconcept3', 
-                                children:[]},
-                            {
-                                id:'node8', 
-                                name:'subconcept4', 
-                                children:[]},
-                            {
-                                id:'node9', 
-                                name:'subconcept5', 
-                                children:[]}
-                            ]
-                    }
-                    ]
-            },
-            {
-                id:'node1', 
-                name:'week2', 
-                children:[
-                    {
-                        id:'node10', 
-                        name:'concept3', 
-                        children:[
-                            {
-                                id:'node13', 
-                                name:'subconcept6', 
-                                children:[]
-                            }
-                        ]
-                    },
-                    {
-                        id:'node11', 
-                        name:'concept4', 
-                        children:[
-                            {
-                                id:'node14', 
-                                name:'subconcept7', 
-                                children:[]
-                            },
-                            {
-                                id:'node15', 
-                                name:'subconcept8', 
-                                children:[]}
-                            ]
-                        },
-                        {
-                            id:'node12', 
-                            name:'concept5', 
-                            children:[
-                                {
-                                    id:'node16', 
-                                    name:'subconcept9', 
-                                    children:[]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    id:'node2', 
-                    name:'week3', 
-                    children:[
-                        {
-                            id:'node17', 
-                            name:'concept6', 
-                            children:[
-                                {
-                                    id:'node18', 
-                                    name:'subconcept10', 
-                                    children:[]},
-                                    {
-                                        id:'node19', 
-                                        name:'subconcept11', 
-                                        children:[]
-                                    }
-                                ]
-                            }
-                        ]
-                },
+    // var json = {
+    //     id:'node00', 
+    //     name:'CS10', 
+    //     data:{}, 
+    //     children:[
+    //         {
+    //             id:'node0', 
+    //             name:'week1', 
+    //             children:[
+    //                 {
+    //                     id:'node3', 
+    //                     name:'concept1', 
+    //                     children:[
+    //                         {
+    //                             id:'node5', 
+    //                             name:'subconcept1', 
+    //                             children:[]},
+    //                         {
+    //                             id:'node6', 
+    //                             name:'subconcept2', 
+    //                             children:[]}
+    //                         ]
+    //                 },
+    //                 {
+    //                     id:'node4', 
+    //                     name:'concept2', 
+    //                     children:[
+    //                         {
+    //                             id:'node7', 
+    //                             name:'subconcept3', 
+    //                             children:[]},
+    //                         {
+    //                             id:'node8', 
+    //                             name:'subconcept4', 
+    //                             children:[]},
+    //                         {
+    //                             id:'node9', 
+    //                             name:'subconcept5', 
+    //                             children:[]}
+    //                         ]
+    //                 }
+    //                 ]
+    //         },
+    //         {
+    //             id:'node1', 
+    //             name:'week2', 
+    //             children:[
+    //                 {
+    //                     id:'node10', 
+    //                     name:'concept3', 
+    //                     children:[
+    //                         {
+    //                             id:'node13', 
+    //                             name:'subconcept6', 
+    //                             children:[]
+    //                         }
+    //                     ]
+    //                 },
+    //                 {
+    //                     id:'node11', 
+    //                     name:'concept4', 
+    //                     children:[
+    //                         {
+    //                             id:'node14', 
+    //                             name:'subconcept7', 
+    //                             children:[]
+    //                         },
+    //                         {
+    //                             id:'node15', 
+    //                             name:'subconcept8', 
+    //                             children:[]}
+    //                         ]
+    //                     },
+    //                     {
+    //                         id:'node12', 
+    //                         name:'concept5', 
+    //                         children:[
+    //                             {
+    //                                 id:'node16', 
+    //                                 name:'subconcept9', 
+    //                                 children:[]
+    //                             }
+    //                         ]
+    //                     }
+    //                 ]
+    //             },
+    //             {
+    //                 id:'node2', 
+    //                 name:'week3', 
+    //                 children:[
+    //                     {
+    //                         id:'node17', 
+    //                         name:'concept6', 
+    //                         children:[
+    //                             {
+    //                                 id:'node18', 
+    //                                 name:'subconcept10', 
+    //                                 children:[]},
+    //                                 {
+    //                                     id:'node19', 
+    //                                     name:'subconcept11', 
+    //                                     children:[]
+    //                                 }
+    //                             ]
+    //                         }
+    //                     ]
+    //             },
                 
-            ]
-        };
+    //         ]
+    //     };
+
+    var json = {id:'node00', name:'CS10', data:{}, children:[{id:'node0', name:'week1', children:[{id:'node3', name:'concept1', children:[{id:'node5', name:'subconcept1', children:[]},{id:'node6', name:'subconcept2', children:[]}]},{id:'node4', name:'concept2', children:[{id:'node7', name:'subconcept3', children:[]},{id:'node8', name:'subconcept4', children:[]},{id:'node9', name:'subconcept5', children:[]}]}]},{id:'node1', name:'week2', children:[{id:'node10', name:'concept3', children:[{id:'node13', name:'subconcept6', children:[]}]},{id:'node11', name:'concept4', children:[{id:'node14', name:'subconcept7', children:[]},{id:'node15', name:'subconcept8', children:[]}]},{id:'node12', name:'concept5', children:[{id:'node16', name:'subconcept9', children:[]}]}]},{id:'node2', name:'week3', children:[{id:'node17', name:'concept6', children:[{id:'node18', name:'subconcept10', children:[]},{id:'node19', name:'subconcept11', children:[]}]}]}]};
+    
     //end
     //init Spacetree
     //Create a new ST instance
